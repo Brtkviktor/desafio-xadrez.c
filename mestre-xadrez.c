@@ -1,67 +1,62 @@
 #include <stdio.h>
 
-void movertorre(int casas) {
-    if (casas > 0)
-    {
-        printf("Torre Andou uma casa a Direita\n");
-        movertorre(casas - 1);
-    }
-}
-void moverbispo(int casas) {
-    if (casas > 0)
-    {
-        printf("Bispo moveu para Direita\n"); 
-        printf("Bispo moveu para Esquerda\n");
-        moverbispo(casas - 1);
-    }
+// Função recursiva para mover a Torre (5 casas para Direita)
+void moverTorre(int casas)
+{
+    if (casas == 0)
+        return;
+    printf("Direita\n");
+    moverTorre(casas - 1);
 }
 
-void moverrainha(int casas) {
-    if (casas > 0)
+// Função recursiva para mover o Bispo (5 casas na diagonal Cima Direita)
+void moverBispo(int casas)
+{
+    if (casas == 0)
+        return;
+    printf("Cima Direita\n");
+    moverBispo(casas - 1);
+}
+
+// Função recursiva para mover a Rainha (8 casas para Esquerda)
+void moverRainha(int casas)
+{
+    if (casas == 0)
+        return;
+    printf("Esquerda\n");
+    moverRainha(casas - 1);
+}
+
+// Movimento do Cavalo em "L" (2 para cima, 1 para direita) com loops complexos
+void moverCavaloMestre()
+{
+    int i, j;
+    for (i = 0, j = 2; i < 3 && j >= 0; i++, j--)
     {
-        printf("Rainha Andou uma casa a Esquerda\n");
-        moverrainha(casas - 1);
+        if (j == 1)
+            continue;
+        printf("Cima\n");
+        if (i == 2)
+            break;
     }
-    
-    
+    printf("Direita\n");
 }
 
 int main()
 {
+    printf("## Bem Vindo ao jogo de Xadres ##!\n");
 
-    // Iniciando variaveis
-    int torre = 1;
-    int bispo = 1;
-    int rainha = 1;
-    int cavalo = 1;
+    printf("Movimento da Torre:\n");
+    moverTorre(5);
 
-    printf("### Bem Vindo ao jogo de Xadres! ###\n\n");
+    printf("\nMovimento do Bispo:\n");
+    moverBispo(5);
 
-    printf("Agora vamos Mover a Torre:\n");
-    movertorre(5);
+    printf("\nMovimento da Rainha:\n");
+    moverRainha(8);
 
-    printf("\n");
-    printf(" Agora vamos Mover o Bispo:\n");
-    moverbispo(5);
-    
-    printf("\n");
-    printf("Agora vamos Mover a Rainha:\n");
-    moverrainha(8);
-
-    // logica da movimentação do cavalo
-    printf("\n");
-    printf("Agora vamos Mover o cavalo\n");
-    while (cavalo--)
-    {
-        for (int cavL = 0; cavL < 2; cavL++)
-        {
-            printf("Cavalo moveu para Baixo\n"); // imprime "Baixo" duas vezes
-        }
-
-        printf("Cavalo moveu para Esquerda\n"); // imprime "Esquerda" uma vezes
-    }
-
-        printf("\n");
+    printf("\nMovimento do Cavalo:\n");
+    moverCavaloMestre();
 
     return 0;
 }

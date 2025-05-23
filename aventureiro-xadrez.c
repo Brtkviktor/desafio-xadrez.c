@@ -3,58 +3,46 @@
 int main()
 {
 
-    // Iniciando variaveis
-    int torre = 1;
-    int bispo = 1;
-    int rainha = 1;
-    int cavalo = 1;
+    printf("## Bem Vindo ao jogo de Xadres ##!\n");
 
-    printf("## Bem Vindo ao jogo de Xadres!\n");
-
-    // logica da torre no while
-    while (torre <= 5)
+    // Torre: 5 casas para a Direita usando for
+    printf("Movimento da Torre:\n");
+    for (int i = 0; i < 5; i++)
     {
-        printf(" Torre Andou uma casa a Direita\n");  // imprime "Direita" cinco vezes
-        torre++;
+        printf("Direita\n");
     }
 
-    printf("\n");
+    // Bispo: 5 casas na diagonal Cima Direita usando while
+    printf("\nMovimento do Bispo:\n");
+    int i = 0;
+    while (i < 5)
+    {
+        printf("Cima, Direita\n");
+        i++;
+    }
 
-    printf(" Agora vamos Mover o Bispo\n");
-
-    // logica do bispo no do-while
+    // Rainha: 8 casas para a Esquerda usando do-while
+    printf("\nMovimento da Rainha:\n");
+    int j = 0;
     do
     {
-        printf("Bispo moveu para Direita\n"); // imprime "Direita" cinco vezes
-        printf("Bispo moveu para Esquerda\n"); // imprime "Esquerda" cinco vezes
-        bispo++;
-    } while (bispo <= 5);
+        printf("Esquerda\n");
+        j++;
+    } while (j < 8);
 
-    printf("\n");
-
-    printf("Agora vamos Mover a Rainha\n");
-
-    // logica da movimentação da rainha com o for
-    for (rainha = 1; rainha <= 8; rainha++)
+    printf("Movimento do Cavalo:\n");
+    printf("Movimento do Cavalo:\n");
+    // Cavalo: movimento em "L" (2 casas para baixo, 1 para esquerda)
+    for (int a = 0; a < 2; a++)
     {
-        printf(" Rainha Andou uma casa a Esquerda\n"); // imprime "Eireita" oito vezes
-    }
-
-    printf("\n");
-
-    // logica da movimentação do cavalo
-    printf("Agora vamos Mover o cavalo\n");
-    while (cavalo--)
-    {
-        for (int cavL = 0; cavL < 2; cavL++)
+        printf("Baixo\n");
+        int b = 0;
+        while (b < 1)
         {
-            printf("Cavalo moveu para Baixo\n"); // imprime "Baixo" duas vezes
+            b++;
         }
-
-        printf("Cavalo moveu para Esquerda\n"); // imprime "Esquerda" uma vezes
     }
-
-        printf("\n");
+    printf("Esquerda\n");
 
     return 0;
 }
