@@ -1,4 +1,4 @@
-# ♟️ Simulação de Movimentação de Peças de Xadrez em C
+#♟️ Simulação de Movimentação de Peças de Xadrez em C
 
 Este projeto tem como objetivo simular o movimento de peças de xadrez utilizando estruturas de repetição e recursividade na linguagem C. O desafio é proposto em três níveis de dificuldade (Novato, Aventureiro e Mestre), com foco em aplicar conceitos fundamentais da programação.
 
