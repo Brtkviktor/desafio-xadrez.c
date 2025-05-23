@@ -1,10 +1,3 @@
-Com base no conteúdo do PDF fornecido, segue a **resolução geral do desafio** e um **modelo de resumo para README.md** que você pode usar no seu repositório do GitHub para documentar o projeto “Movimentação de Peças de Xadrez em C”.
-
----
-
-## ✅ Resumo do Projeto (para o `README.md` do GitHub)
-
-````markdown
 # ♟️ Simulação de Movimentação de Peças de Xadrez em C
 
 Este projeto tem como objetivo simular o movimento de peças de xadrez utilizando estruturas de repetição e recursividade na linguagem C. O desafio é proposto em três níveis de dificuldade (Novato, Aventureiro e Mestre), com foco em aplicar conceitos fundamentais da programação.
@@ -89,12 +82,6 @@ Este projeto tem como objetivo simular o movimento de peças de xadrez utilizand
 Este projeto é uma prática completa para dominar estruturas de repetição, lógica de programação e organização de código em C. Ideal para iniciantes que desejam aprofundar seu conhecimento com aplicações práticas e divertidas.
 
 ---
-
-## 📚 Referências
-
-* [W3Schools C Tutorial](https://www.w3schools.com/c/)
-* ISO/IEC C Language Standard
-* Material fornecido no desafio da MateCheck
 
 ```
 
