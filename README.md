@@ -44,28 +44,6 @@ Este projeto tem como objetivo simular o movimento de peças de xadrez utilizand
 
 ---
 
-## 📦 Como Executar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/xadrez-c.git
-   cd xadrez-c
-````
-
-2. Compile o código:
-
-   ```bash
-   gcc xadrez.c -o xadrez
-   ```
-
-3. Execute:
-
-   ```bash
-   ./xadrez
-   ```
-
----
-
 ## ✏️ Estrutura do Código
 
 * Cada função está devidamente comentada, explicando:
@@ -82,8 +60,3 @@ Este projeto tem como objetivo simular o movimento de peças de xadrez utilizand
 Este projeto é uma prática completa para dominar estruturas de repetição, lógica de programação e organização de código em C. Ideal para iniciantes que desejam aprofundar seu conhecimento com aplicações práticas e divertidas.
 
 ---
-
-```
-
-Se quiser, posso também criar o arquivo `README.md` diretamente para você. Deseja isso? Posso ainda te ajudar a montar o `xadrez.c` com base nos requisitos.
-```
